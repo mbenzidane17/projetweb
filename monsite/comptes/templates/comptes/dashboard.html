@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="text-align:center; padding:40px;">
+    <h2>📊 Tableau de bord général</h2>
+    <p>Bienvenue {{ user.username }} !</p>
+    <p>Choisissez une action selon votre rôle :</p>
+
+    <ul style="list-style:none; padding:0;">
+        <li><a href="{% url 'admin_dashboard' %}">👑 Espace administrateur</a></li>
+        <li><a href="{% url 'tuteur_dashboard' %}">🎓 Espace tuteur</a></li>
+        <li><a href="{% url 'etudiant_dashboard' %}">🌸 Espace étudiant</a></li>
+    </ul>
+</div>
+{% endblock %}

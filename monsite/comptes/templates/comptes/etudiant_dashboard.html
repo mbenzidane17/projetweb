@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="text-align:center; padding:40px;">
+    <h2 style="color:#6c63ff;">🌸 Tableau de bord Étudiant</h2>
+    <p>Bienvenue {{ user.username }} ! Tu peux consulter ton profil, tes notes et ton emploi du temps.</p>
+
+    <ul style="list-style:none; padding:0;">
+        <li><a href="{% url 'profil' %}">👤 Modifier ton profil</a></li>
+        <li><a href="#">📈 Voir tes notes</a></li>
+        <li><a href="#">🕒 Consulter ton emploi du temps</a></li>
+    </ul>
+</div>
+{% endblock %}

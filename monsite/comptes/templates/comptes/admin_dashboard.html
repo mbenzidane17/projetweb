@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="text-align:center; padding:40px;">
+    <h2 style="color:#ff6b6b;">👑 Tableau de bord Administrateur</h2>
+    <p>Bienvenue {{ user.username }} ! Vous pouvez gérer les comptes, suivre les tuteurs et consulter les statistiques.</p>
+
+    <ul style="list-style:none; padding:0;">
+        <li><a href="#">🧑‍💼 Gérer les utilisateurs</a></li>
+        <li><a href="#">📊 Voir les statistiques</a></li>
+        <li><a href="#">🧑‍🏫 Gérer les tuteurs</a></li>
+    </ul>
+</div>
+{% endblock %}

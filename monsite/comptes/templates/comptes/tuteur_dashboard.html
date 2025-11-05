@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="text-align:center; padding:40px;">
+    <h2 style="color:#4ecdc4;">🎓 Tableau de bord Tuteur</h2>
+    <p>Bienvenue {{ user.username }} ! Vous pouvez suivre vos étudiants et créer des séances.</p>
+
+    <ul style="list-style:none; padding:0;">
+        <li><a href="#">👩‍🎓 Liste des étudiants</a></li>
+        <li><a href="#">📝 Donner un feedback</a></li>
+        <li><a href="#">📅 Voir les séances</a></li>
+    </ul>
+</div>
+{% endblock %}
